@@ -21,6 +21,12 @@ resource env 'Microsoft.App/managedEnvironments@2023-05-01' = {
         sharedKey: logWorkspace.listKeys().primarySharedKey
       }
     }
+    workloadProfiles: [
+      {
+        name: 'Consumption'
+        workloadProfileType: 'Consumption'
+      }
+    ]
   }
 }
 

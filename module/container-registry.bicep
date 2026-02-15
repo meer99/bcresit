@@ -10,7 +10,7 @@ resource acr 'Microsoft.ContainerRegistry/registries@2023-01-01-preview' = {
   location: location
   tags: tags
   sku: {
-    name: 'Standard'
+    name: 'Premium'
   }
   identity: {
     type: 'UserAssigned'

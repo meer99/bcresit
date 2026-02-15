@@ -82,7 +82,7 @@ module sqlDatabase './module/sql-database.bicep' = {
   name: 'sqlDatabase'
   params: {
     name: sqlDatabaseName
-    serverName: sqlServerName
+    serverName: sqlServer.outputs.serverName
     location: location
     tags: tags
   }
@@ -129,7 +129,7 @@ module peCae './module/private-endpoint.bicep' = {
     subnetName: subnetName
     vnetName: vnetName
     privateLinkResourceId: containerAppsEnv.outputs.environmentId
-    groupId: 'managedEnvironment'
+    groupId: 'managedEnvironments'
     tags: tags
   }
 }

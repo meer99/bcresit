@@ -20,3 +20,4 @@ resource sqlServer 'Microsoft.Sql/servers@2022-05-01-preview' = {
 }
 
 output serverId string = sqlServer.id
+output serverName string = sqlServer.name

@@ -1,0 +1,18 @@
+{
+  "location": "australiaeast",
+  "environment": "dev",
+  "resourceGroupName": "rg-ae-test",
+  "vnetName": "vnet-ae-test",
+  "subnetName": "snet-ae-test",
+  "containerAppsEnvName": "cae-ae-test",
+  "containerRegistryName": "acraetestdev",
+  "containerAppJob1Name": "caj-ae-bill",
+  "containerAppJob2Name": "caj-ae-data",
+  "sqlServerName": "sql-ae-test",
+  "sqlDatabaseName": "db-ae-test",
+  "userAssignedIdentityName": "mi-ae-test",
+  "logAnalyticsWorkspaceName": "log-ae-test",
+  "privateEndpointAcrName": "pe-ae-cr",
+  "privateEndpointCaeName": "pe-ae-cae",
+  "privateEndpointSqlName": "pe-ae-sql"
+}

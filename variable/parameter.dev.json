@@ -1,0 +1,24 @@
+{
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": { "value": "australiaeast" },
+    "environment": { "value": "dev" },
+    "tags": { "value": { "env": "dev" } },
+    "resourceGroupName": { "value": "rg-ae-test" },
+    "vnetName": { "value": "vnet-ae-test" },
+    "subnetName": { "value": "snet-ae-test" },
+    "containerAppsEnvName": { "value": "cae-ae-test" },
+    "containerRegistryName": { "value": "acraetestdev" },
+    "containerAppJob1Name": { "value": "caj-ae-bill" },
+    "containerAppJob2Name": { "value": "caj-ae-data" },
+    "sqlServerName": { "value": "sql-ae-test" },
+    "sqlDatabaseName": { "value": "db-ae-test" },
+    "sqlAdminLogin": { "value": "sqladminuser" },
+    "sqlAdminPassword": { "value": "ChangeMe-Strong-Password-123!" },
+    "userAssignedIdentityName": { "value": "mi-ae-test" },
+    "logAnalyticsWorkspaceName": { "value": "log-ae-test" },
+    "privateEndpointAcrName": { "value": "pe-ae-cr" },
+    "privateEndpointCaeName": { "value": "pe-ae-cae" },
+    "privateEndpointSqlName": { "value": "pe-ae-sql" }
+  }
+}

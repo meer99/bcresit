@@ -7,7 +7,7 @@
     "resourceGroupName": { "value": "rg-ae-test" },
     "vnetName": { "value": "vnet-ae-test" },
     "subnetName": { "value": "snet-ae-test" },
-    "containerAppsEnvName": { "value": "cae-ae-test-dev-wp" },
+    "containerAppsEnvName": { "value": "cae-ae-test" },
     "containerRegistryName": { "value": "acraetestdev" },
     "containerAppJob1Name": { "value": "caj-ae-bill" },
     "containerAppJob2Name": { "value": "caj-ae-data" },

@@ -26,6 +26,12 @@ resource env 'Microsoft.App/managedEnvironments@2023-05-01' = {
         name: 'Consumption'
         workloadProfileType: 'Consumption'
       }
+      {
+        name: 'DedicatedD4'
+        workloadProfileType: 'D4'
+        minimumCount: 1
+        maximumCount: 1
+      }
     ]
   }
 }

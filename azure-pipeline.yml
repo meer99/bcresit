@@ -14,7 +14,7 @@ parameters:
     default: rg-ae-test
   - name: azureServiceConnection
     type: string
-    default: AzureServiceConnection
+    default: ado-bcsit
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -35,6 +35,6 @@ stages:
               inlineScript: |
                 az deployment group create \
                   --resource-group "${{ parameters.resourceGroupName }}" \
-                  --template-file bicep/main.bicep \
-                  --parameters @variables/parameters.${{ parameters.environment }}.json \
+                  --template-file main.bicep \
+                  --parameters @variable/parameter.${{ parameters.environment }}.json \
                   --parameters environment=${{ parameters.environment }}

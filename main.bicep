@@ -113,6 +113,7 @@ module peAcr './module/private-endpoint.bicep' = {
   params: {
     name: privateEndpointAcrName
     location: location
+    resourceGroupName: resourceGroupName
     subnetName: subnetName
     vnetName: vnetName
     privateLinkResourceId: containerRegistry.outputs.registryId
@@ -126,6 +127,7 @@ module peCae './module/private-endpoint.bicep' = {
   params: {
     name: privateEndpointCaeName
     location: location
+    resourceGroupName: resourceGroupName
     subnetName: subnetName
     vnetName: vnetName
     privateLinkResourceId: containerAppsEnv.outputs.environmentId
@@ -139,6 +141,7 @@ module peSql './module/private-endpoint.bicep' = {
   params: {
     name: privateEndpointSqlName
     location: location
+    resourceGroupName: resourceGroupName
     subnetName: subnetName
     vnetName: vnetName
     privateLinkResourceId: sqlServer.outputs.serverId

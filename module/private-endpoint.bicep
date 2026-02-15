@@ -2,6 +2,7 @@ targetScope = 'resourceGroup'
 
 param name string
 param location string
+param resourceGroupName string
 param vnetName string
 param subnetName string
 param privateLinkResourceId string
@@ -10,6 +11,7 @@ param tags object
 
 resource vnet 'Microsoft.Network/virtualNetworks@2023-05-01' existing = {
   name: vnetName
+  scope: resourceGroup(resourceGroupName)
 }
 
 resource subnet 'Microsoft.Network/virtualNetworks/subnets@2023-05-01' existing = {

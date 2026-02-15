@@ -9,11 +9,12 @@ resource logWorkspace 'Microsoft.OperationalInsights/workspaces@2022-10-01' exis
   name: last(split(logAnalyticsWorkspaceId, '/'))
 }
 
-resource env 'Microsoft.App/managedEnvironments@2023-05-01' = {
+resource env 'Microsoft.App/managedEnvironments@2024-03-01' = {
   name: name
   location: location
   tags: tags
-  properties: {
+  properties: any({
+    publicNetworkAccess: 'Disabled'
     appLogsConfiguration: {
       destination: 'log-analytics'
       logAnalyticsConfiguration: {
@@ -33,7 +34,7 @@ resource env 'Microsoft.App/managedEnvironments@2023-05-01' = {
         maximumCount: 1
       }
     ]
-  }
+  })
 }
 
 output environmentId string = env.id
